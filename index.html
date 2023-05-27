@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Argenzuela</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="up">
+        
+      </div>
+
+      <div class="container2">
+        <div class="izq">
+            <h2>Valor del dolar blue: <span id="dolarb"></span> pesos argentinos.</h2>
+            
+            <h3>$2000 pesos ahora son: <span id="dosmil"></span> USD</h3>
+            <h3>$1000 pesos ahora son: <span id="mil"></span> USD</h3>
+            <h3>$500 pesos ahora son: <span id="quinientos"></span> USD</h3>
+            <h3>$100 pesos ahora son: <span id="cien"></span> USD</h3>
+    
+            
+          </div>
+    
+          <div class="der">
+            <div class="calc1">
+             <div>
+              <label for="">Calculadora USD a pesos</label>
+              <p>(Tocá la bandera para agregar un valor)</p>
+             </div>
+           
+
+            <h3>
+                 <input type="number" step="0.01" placeholder="USD" id="usdCalc" /> dolares equivalen a
+                <span id="cantidadPesos">$0</span> pesos argentinos.
+              </h3>
+
+              <input type="submit" id="subCalc" value="Convertir"/>
+            </div>
+
+            <div class="calc2">
+              <div>
+                <label for="">Calculadora pesos a USD</label>
+            <p>(Tocá la bandera para agregar un valor)</p>
+              </div>
+           
+
+            <h3>
+              <input type="number" step="0.01" placeholder="ARS" id="pesosCalc" /> pesos argentinos equivalen a
+                <span id="cantidadUSD2">$0</span> dolares.
+              </h3>
+
+              <input type="submit" id="subCalc2" value="Convertir"/>
+            </div>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="down">
+        <h6 class="lastUpd">
+            Esta información fue actualizada por ultima vez en esta fecha:
+            <span id="last"></span>
+          </h6>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

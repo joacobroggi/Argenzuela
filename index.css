@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap");
+
+body {
+  margin: 0 0;
+}
+span {
+  text-decoration: underline;
+  text-decoration-color: #fcbf49;
+  color: #fcbf49;
+}
+.up {
+  background-color: #75aadb;
+  margin: 0 0;
+  height: calc(var(--vh, 1vh) * 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 2.2rem;
+  width: 75%;
+  color: white;
+  font-weight: 600;
+}
+h2 {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+h3 {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1%;
+  line-height: 2rem;
+}
+.container {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  height: calc(var(--vh, 1vh) * 100);
+  justify-content: space-between;
+}
+.container2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.izq {
+  text-align: left;
+  font-family: "Wix Madefor Display", sans-serif;
+  width: 40%;
+  padding-left: 2%;
+}
+.der {
+  width: 55%;
+  font-family: "Wix Madefor Display", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.calc1 {
+  width: 40%;
+  border: solid #75aadb;
+  border-width: 20px 1px 20px 1px;
+  margin: 1% 0;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.calc2 {
+    margin: 1% 0;
+    border: solid #75aadb;
+    border-width: 20px 1px 20px 1px;
+  padding: 2%;
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.down {
+  margin: 0 0;
+  background-color: #75aadb;
+  height: calc(var(--vh, 1vh) * 25);
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+}
+input[type="number"] {
+  background-color: white;
+  width: 20%;
+  border: solid #75aadb;
+  border-width: 7px 1px 7px 1px;
+  text-align: center;
+  border-radius: 5px;
+  height: calc(var(--vh, 1vh) * 3);
+  color: #fcbf49;
+}
+::placeholder {
+  color: #fcbf49;
+  opacity: 0.9; /* Firefox */
+}
+input[type="submit"] {
+  height: calc(var(--vh, 1vh) * 5);
+  background-color: #75aadb;
+  width: 60%;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 600;
+  border: 1px solid #75aadb;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #4b91d2;
+}
+input:focus {
+  outline: 1px solid transparent;
+}
+label {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .container2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .izq {
+    width: 90%;
+    text-align: center;
+  }
+  .down {
+    padding-bottom: calc(var(--vh, 1vh) * 5);
+  }
+  .der {
+    width: 95%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  input[type="submit"] {
+    height: calc(var(--vh, 1vh) * 5);
+    background-color: #75aadb;
+    color: white;
+    font-size: 1rem;
+    padding: 2%;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 600;
+    border: 1px solid #75aadb;
+    transition: 0.2s;
+    border-radius: 5px;
+  }
+  h1 {
+    display: none;
+  }
+  input[type="number"] {
+    background-color: white;
+    width: 30%;
+    border: solid #75aadb;
+    border-width: 7px 1px 7px 1px;
+    text-align: center;
+    border-radius: 5px;
+    height: calc(var(--vh, 1vh) * 3);
+    color: #fcbf49;
+  }
+  label {
+    
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+  .calc1 {
+    min-height: calc(var(--vh, 1vh) * 50);
+  }
+  .calc2 {
+    min-height: calc(var(--vh, 1vh) * 50);
+  }
+  .up {
+  
+    padding-bottom: calc(var(--vh, 1vh) * 15);
+    
+  }
+}
