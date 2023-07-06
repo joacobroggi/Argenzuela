@@ -10,31 +10,32 @@
   <body>
     <div class="container">
       <div class="up">
-        
+        <div class="izq">
+          <h2>Valor del dolar blue: <span id="dolarb"></span> pesos argentinos.</h2>
+<!--           
+          <h3>$2000 pesos ahora son: <span id="dosmil"></span> USD</h3>
+          <h3>$1000 pesos ahora son: <span id="mil"></span> USD</h3>
+          <h3>$500 pesos ahora son: <span id="quinientos"></span> USD</h3>
+          <h3>$100 pesos ahora son: <span id="cien"></span> USD</h3> -->
+  
+          
+        </div>
       </div>
 
       <div class="container2">
-        <div class="izq">
-            <h2>Valor del dolar blue: <span id="dolarb"></span> pesos argentinos.</h2>
-            
-            <h3>$2000 pesos ahora son: <span id="dosmil"></span> USD</h3>
-            <h3>$1000 pesos ahora son: <span id="mil"></span> USD</h3>
-            <h3>$500 pesos ahora son: <span id="quinientos"></span> USD</h3>
-            <h3>$100 pesos ahora son: <span id="cien"></span> USD</h3>
-    
-            
-          </div>
+      
     
           <div class="der">
             <div class="calc1">
              <div>
               <label for="">Calculadora USD a pesos</label>
               <p>(Tocá la bandera para agregar un valor)</p>
+              <input type="number" step="0.01" placeholder="USD" id="usdCalc" />
              </div>
            
 
             <h3>
-                 <input type="number" step="0.01" placeholder="USD" id="usdCalc" /> dolares equivalen a
+              <span id="cantidadUsdSp">$0</span> dolares equivalen a
                 <span id="cantidadPesos">$0</span> pesos argentinos.
               </h3>
 
@@ -46,10 +47,10 @@
                 <label for="">Calculadora pesos a USD</label>
             <p>(Tocá la bandera para agregar un valor)</p>
               </div>
-           
+              <input type="number" step="0.01" placeholder="ARS" id="pesosCalc" />
 
             <h3>
-              <input type="number" step="0.01" placeholder="ARS" id="pesosCalc" /> pesos argentinos equivalen a
+               <span id="cantidadPesos2">$0</span> pesos argentinos equivalen a
                 <span id="cantidadUSD2">$0</span> dolares.
               </h3>
 

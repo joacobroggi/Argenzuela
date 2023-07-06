@@ -7,8 +7,9 @@ let cienSp = document.getElementById('cien');
 let lastUpd = document.getElementById('last');
 let iphone = document.getElementById('iphone');
 let input = document.getElementById('usdCalc');
-let submit = document.getElementById('subCalc')
+let submit = document.getElementById('subCalc');
 let vh = window.innerHeight * 0.01;
+let cantidadUsd = document.getElementById('cantidadUsd');
 
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
@@ -17,10 +18,28 @@ let submit2 = document.getElementById('subCalc2')
 
 let cantPesos = document.getElementById('cantidadPesos');
 let cantUsd = document.getElementById('cantidadUsd');
-
+let cantUsdSp = document.getElementById('cantidadUsdSp');
 let cantPesos2 = document.getElementById('cantidadPesos2');
 let cantUsd2 = document.getElementById('cantidadUSD2');
 
+function formatInput(input) {
+    // Remove any existing formatting from the input value
+    var value = input.replace(/[^\d.]/g, '');
+  
+    // Split the value into integer and decimal parts
+    var parts = value.split('.');
+    var integerPart = parts[0] || '';
+    var decimalPart = parts[1] || '';
+  
+    // Add thousands separator to the integer part
+    integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  
+    // Concatenate the integer and decimal parts with the desired format
+    var formattedValue = integerPart + (decimalPart ? '.' + decimalPart : '');
+  
+    // Update the input value with the formatted value
+    return formattedValue;
+  }
 
 const asignarValores = (objeto) => {
     const blue = objeto.blue;
@@ -53,8 +72,8 @@ const asignarValores = (objeto) => {
 }
 
 const calculadora = (obj) => {
-    let pesos
-    let usd
+    let pesos;
+    let usd;
     const blue = obj.blue;
     const bluePrice = blue.value_avg;
     let valorInput = parseFloat(input.value)
@@ -74,7 +93,7 @@ const calculadora = (obj) => {
     }
 
    
-
+   cantUsdSp.innerHTML = usd
     // cantUsd.innerHTML = "$" + usd;
     cantPesos.innerHTML = "$" + pesos;
 }
@@ -121,6 +140,7 @@ submit.addEventListener('click', (eve)=> {
 })
 input.addEventListener('change', (e)=> {
     e.preventDefault();
+    
     calculadora(obj);
 })
 
@@ -131,6 +151,7 @@ submit2.addEventListener('click', (eve)=> {
 })
 input2.addEventListener('change', (e)=> {
     e.preventDefault();
+  
     calculadora2(obj);
 })
 

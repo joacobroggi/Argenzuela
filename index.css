@@ -52,13 +52,16 @@ h3 {
   align-items: center;
 }
 .izq {
-  text-align: left;
+  display: flex;
+  text-align: center;
   font-family: "Wix Madefor Display", sans-serif;
-  width: 40%;
-  padding-left: 2%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 .der {
-  width: 55%;
+  width: 95%;
   font-family: "Wix Madefor Display", sans-serif;
   display: flex;
   justify-content: space-around;
@@ -105,10 +108,11 @@ h3 {
 }
 input[type="number"] {
   background-color: white;
-  width: 20%;
+  /* width: 60%; */
   border: solid #75aadb;
   border-width: 7px 1px 7px 1px;
   text-align: center;
+  font-family: "Wix Madefor Display", sans-serif;
   border-radius: 5px;
   height: calc(var(--vh, 1vh) * 3);
   color: #fcbf49;
@@ -146,17 +150,32 @@ label {
     width: 100%;
     flex-direction: column;
   }
+  .up {
+    height: calc(var(--vh, 1vh) * 15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .izq {
     width: 90%;
     text-align: center;
+    margin: 0 0;
+    margin-top: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .down {
-    padding-bottom: calc(var(--vh, 1vh) * 5);
+    height: calc(var(--vh, 1vh) * 15);
   }
   .der {
     width: 95%;
     margin-top: 2%;
     margin-bottom: 5%;
+    flex-direction: column;
   }
   input[type="submit"] {
     height: calc(var(--vh, 1vh) * 5);
@@ -175,12 +194,14 @@ label {
   }
   input[type="number"] {
     background-color: white;
-    width: 30%;
+    width: 60%;
     border: solid #75aadb;
     border-width: 7px 1px 7px 1px;
     text-align: center;
     border-radius: 5px;
-    height: calc(var(--vh, 1vh) * 3);
+    height: calc(var(--vh, 1vh) * 4);
+    text-align: left;
+    padding-left: 3%;
     color: #fcbf49;
   }
   label {
@@ -192,10 +213,13 @@ label {
     font-size: 1.1rem;
   }
   .calc1 {
-    min-height: calc(var(--vh, 1vh) * 50);
+    min-height: calc(var(--vh, 1vh) * 55);
+    margin-bottom: 5%;
+    width: 75%;
   }
   .calc2 {
-    min-height: calc(var(--vh, 1vh) * 50);
+    min-height: calc(var(--vh, 1vh) * 55);
+    width: 75%;
   }
   .up {
   
