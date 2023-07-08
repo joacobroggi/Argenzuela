@@ -170,6 +170,10 @@ label {
   }
   .down {
     height: calc(var(--vh, 1vh) * 15);
+    
+  }
+  .down h6 {
+    width: 90%;
   }
   .der {
     width: 95%;

@@ -93,7 +93,7 @@ const calculadora = (obj) => {
     }
 
    
-   cantUsdSp.innerHTML = usd
+    cantUsdSp.innerHTML = "$" + usd;
     // cantUsd.innerHTML = "$" + usd;
     cantPesos.innerHTML = "$" + pesos;
 }
